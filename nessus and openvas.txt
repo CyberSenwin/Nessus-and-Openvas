@@ -1,0 +1,23 @@
+sudo dpkg -i Nessus-10.7.5-debian10_amd64.
+sudo systemctl start nessusd.service  
+https://kali:8834/
+
+to install openvas
+sudo apt install openvas
+
+use this to setup openvas
+sudo gvm-setup
+
+password reset
+sudo gvmd --user=admin --new-password=passwd
+
+create new user
+sudo runuser -u _gvm — gvmd — create-user=admin2 — new-password=12345
+
+reset password the user
+sudo runuser -u _gvm — gvmd — user=admin — new-password=new_password
+
+sudo gvm-check-setup
+sudo gvm-start
+sudo gvm-stop
+https://localhost:9392
