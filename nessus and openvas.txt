@@ -1,7 +1,11 @@
+NESSUS:
+----------------------------------------------
 sudo dpkg -i Nessus-10.7.5-debian10_amd64.
 sudo systemctl start nessusd.service  
 https://kali:8834/
 
+OPENVAS
+---------------------------------------
 to install openvas
 sudo apt install openvas
 
@@ -21,3 +25,7 @@ sudo gvm-check-setup
 sudo gvm-start
 sudo gvm-stop
 https://localhost:9392
+
+METASPLOIT:
+--------------------------------------------
+msfconsole -press enter
