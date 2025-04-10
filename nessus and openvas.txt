@@ -10,6 +10,11 @@ INSTALLING AFTER DOWNLOADING
 --------------------------------------------
 sudo dpkg -i Nessus-10.8.3-debian10_amd64.deb
 
+START NESSUS
+-------------------------------------------------
+sudo systemctl start nessusd
+
+
 ----------------------------------------------
 sudo dpkg -i Nessus-10.7.5-debian10_amd64.
 sudo systemctl start nessusd.service  
